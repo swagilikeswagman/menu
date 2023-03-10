@@ -104,6 +104,7 @@
     width: 100%;
 }
 
+/*media's voor goeie width bij verschillende grotes*/
 @media  screen and (max-width: 1600px) and (min-width: 1401px) {
   .grid-container {
     position: absolute;
@@ -112,7 +113,7 @@
     padding-right: 3em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
     background-color: aqua;
@@ -129,7 +130,7 @@
     padding-right: 3em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
     background-color: aqua;
@@ -146,7 +147,7 @@
     padding-right: 3em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
     background-color: aqua;
@@ -171,6 +172,27 @@
     width: 100%;
   }
 }
+/*media's voor goeie width bij verschillende grotes done*/
+
+/*media's voor goeie height bij verschillende grotes*/
+
+@media  screen and (max-height: 840) and (min-height: 640px) {
+  .grid-container {
+    position: absolute;
+    padding-top: 7em;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+  } /*bullshit werkt niet kk*/
+}
+/*media's voor goeie height bij verschillende grotes done*/
 
 .column1 {
   background-color: red;
