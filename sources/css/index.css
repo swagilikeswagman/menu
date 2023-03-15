@@ -20,13 +20,11 @@
     background-color: #494949;
   } 
   .menu-bar {
-    position:fixed;
     background-color: var(--color-black);
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0 5%;
     z-index: 2;
   }
@@ -34,6 +32,7 @@
   .menu-bar ul {
     list-style: none;
     display: flex;
+    align-items: center;
   }
   
   .menu-bar ul li {
@@ -55,4 +54,3 @@
   .menu-bar ul li a:hover {
     color: var(--color-primary);
   }
-  
