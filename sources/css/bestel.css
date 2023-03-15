@@ -71,7 +71,7 @@
   }
 
   ::selection {
-    color: rgb(251, 250, 250);
+    color: blue;
     background-color: rgba(128, 128, 128, 0.412);
   }
 
@@ -211,7 +211,6 @@
 } */
 .c1 { /*c1 nog media @ doen voor bij 2 en bij 1 column width*/
   background-color: #ffffffae;
-
   margin-left: 20%;
   margin-top: 3%;
   border-radius: 10px;
@@ -219,11 +218,91 @@
   height: calc(4 / 5 * 100%);
   text-align: center;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* Voor Safari */
+}
+/*Tweede column*/
+.c2 {
+  
+  margin-left: 20%;
+  margin-top: 3%;
+  border-radius: 10px;
+  width: calc(3 / 5 * 100%);
+  height: calc(4 / 5 * 100%);
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px); /* Voor Safari */
+
+  
+}
+@keyframes inside-blur {
+  0%
+  {
+    background-color: #ffffff1a;
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px); /* Voor Safari */
+    display: none;
+  }
+  100%
+  {
+    background-color: #ffffffae;
+    backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px); /* Voor Safari */
+  display: block;
+  }
+}
+.column2:hover .c2{
+  background-color: #ffffffae;
+  margin-left: 20%;
+  margin-top: 3%;
+  border-radius: 10px;
+  width: calc(3 / 5 * 100%);
+  height: calc(4 / 5 * 100%);
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  display: block;
+
+  animation: inside-blur 2s;
+}
+.c2text {
+  animation: fade-in 2s forwards;
+  display: none;
+  opacity: 0;
+}
+.column2:hover .c2text {
+  opacity: 1;
+  display: block;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .column2 {
   background-color: rgb(159, 16, 16);
+  background-image: url(../../bestelpagina/imgs/thaifood.webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
 }
 .column3 {
   background-color: rgb(125, 15, 15);
