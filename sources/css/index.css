@@ -1,5 +1,7 @@
 :root {
   --color-primary: #ff3e54f1;
+  --color-primary-darken: #ff3e5493;
+  --color-darken: #0000008c;
   --color-white: #e9e9e9;
   --color-black: #000000;
 }
@@ -37,7 +39,7 @@ nav{
 }
 .menu-bar {
   background-color: var(--color-black);
-  height: 80px;
+  height: 10vh;
   display: flex;
 }
 
@@ -65,7 +67,7 @@ nav{
 }
 
 .home{
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   background:linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url(../../bestelpagina/imgs/pizza.jpg) no-repeat;
@@ -94,4 +96,25 @@ nav{
   background-color: var(--color-primary);
   color: #EEE;
   text-decoration: none;
+}
+.services{
+  min-height: 90vh;
+  background: var(  --color-primary-darken);
+  color: #EEE;
+}
+.services > h3{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.service-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  grid-gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+.service-container img{
+  width: 250px;
+  height: 300px;
 }
