@@ -3,7 +3,7 @@
   padding: 20px;
 }
 #container >section > div{
-  width: 300px;
+  width: 400px;
   height: 15vh;
   border-radius: 10px;
   border: solid 5px;
@@ -29,4 +29,8 @@ input[type=text]{
   margin-left: 2px;
   margin-right: 5px;
   margin-bottom: 5px;
+}
+section{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
 }
