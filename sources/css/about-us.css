@@ -71,6 +71,7 @@ section {
 /*Section 1*/
 #ab-img-1 {
     border-radius: 10px;
+    width: 250px;
 }
 .ab-text1 {
     width: 55%;
@@ -78,6 +79,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     color: ghostwhite;
+    font-size: 18px;
     /* background-color: rgba(248, 248, 255, 0.16);
     border-radius: 10px; */
 }
@@ -93,6 +95,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     color: ghostwhite;
+    font-size: 18px;
     /* background-color: rgba(248, 248, 255, 0.16);
     border-radius: 10px; */
 }
@@ -108,22 +111,17 @@ section {
     margin-left: auto;
     margin-right: auto;
     color: ghostwhite;
+    font-size: 18px;
     /* background-color: rgba(248, 248, 255, 0.16);
     border-radius: 10px; */
 }
 /*Section 3 done*/
 
-
-
-
-
-
-
-
+/*Social icons*/
 #next { /*Container van 3 images*/
     position: relative;
     display: flex;
-    margin-left: 450px;
+    margin-left: 33%;
     width: 100%;
     margin-right: auto;
 }
@@ -131,7 +129,7 @@ section {
 #imgnext1 { 
     width: 150px;
     margin-left: 50px;
-    transition: all 6s;
+    transition: all 5s;
     cursor: pointer;
 }
 #imgnext1:hover {
@@ -154,4 +152,35 @@ section {
 } 
 #imgnext3:hover {
     transform: scale(1.2);
+}
+/*Social icons done*/
+
+/*Map*/
+.Map {
+    border-radius: 10px;
+    margin-bottom: 200px; /*voor wqat spacing om door te kunnen scrollen naar beneden*/
+    border: rgb(255, 255, 255) 1px solid;
+    border-radius: 0.25em;
+    box-shadow: 0 0 0.4cm 0 rgba(30, 114, 5, 0.744);
+}
+/*k slecht is niet af*/
+.map-text {
+    position: absolute;
+    margin-left: 74%;
+    margin-top: 6.5%;
+    text-align: center;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.434);
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+.map-hr {
+    position: absolute;
+    margin-left: 55.70%;
+    height: 200vh;
+    width: 100vw;
+    background: aliceblue;
+    clip-path: polygon(10% 10%, 30% 10%, 10% 15%, 10% 60%);
+    display:flex;
 }
