@@ -22,7 +22,7 @@ section {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
 }
 .show {
     opacity: 1;
@@ -120,15 +120,38 @@ section {
 
 
 
-#next {
+#next { /*Container van 3 images*/
     position: relative;
     display: flex;
-    margin-left: 500px;
+    margin-left: 450px;
+    width: 100%;
     margin-right: auto;
-
 }
 
-#imgnext {
-    width: 100px;
-    margin-left: 30px;
+#imgnext1 { 
+    width: 150px;
+    margin-left: 50px;
+    transition: all 6s;
+    cursor: pointer;
+}
+#imgnext1:hover {
+    transform: scale(1.2);
+}
+#imgnext2 { 
+    width: 150px;
+    margin-left: 50px;
+    transition: all 4s;
+    cursor: pointer;
+}
+#imgnext2:hover {
+    transform: scale(1.2);
+}
+#imgnext3 { 
+    width: 150px;
+    margin-left: 50px;
+    transition: all 2.5s;
+    cursor: pointer;
+} 
+#imgnext3:hover {
+    transform: scale(1.2);
 }
