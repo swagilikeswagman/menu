@@ -24,8 +24,8 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 40px;
 
-    background-color: aqua;
-    height: 100%;
+    background-color: #494949;
+    height: 500px;
     width: 100%;
 }
 
@@ -41,8 +41,8 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
-    background-color: aqua;
-    height: 100%;
+    background-color: #494949;
+    height: 500px;
     width: 100%;
   }
 }
@@ -58,8 +58,8 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
-    background-color: aqua;
-    height: 100%;
+    background-color: #494949;
+    height: 500px;
     width: 100%;
   }
 }
@@ -75,8 +75,8 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
-    background-color: aqua;
-    height: 100%;
+    background-color: #494949;
+    height: 500px;
     width: 100%;
   }
 }
@@ -92,8 +92,8 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 40px;
 
-    background-color: aqua;
-    height: 100%;
+    background-color: #494949;
+    height: 500px;
     width: 100%;
   }
 }
@@ -112,8 +112,8 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 40px;
 
-    background-color: aqua;
-    height: 100%;
+    background-color: #494949;
+    height: 500px;
     width: 100%;
   } /*bullshit werkt niet kk*/
 }
@@ -239,5 +239,139 @@
   background-color: rgb(51, 4, 4);
 }
 .column6 {
+  background-color: red;
+}
+
+/*GRID 1 DOne*/
+
+.line1 {
+  position: relative;
+  margin-top: 30%;
+  z-index: 1;
+}
+
+.line1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: pink;
+  z-index: 1;
+  display: block;
+  padding-top: 100rem;
+  margin-bottom: -2.5rem;
+  border-bottom: 2px solid pink;
+}
+
+/*GRID 2*/
+
+.grid-container-2 {
+  position: absolute;
+  padding-top: 7em;
+  padding-left: 3em;
+  padding-right: 3em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+
+  background-color: #494949;
+  height: 500px;
+  width: 100%;
+}
+
+/*media's voor goeie width bij verschillende grotes*/
+@media  screen and (max-width: 1600px) and (min-width: 1401px) {
+.grid-container-2 {
+  position: absolute;
+  padding-top: 7em;
+  padding-left: 3em;
+  padding-right: 3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+
+  background-color: #494949;
+  height: 500px;
+  width: 100%;
+}
+}
+
+@media  screen and (max-width: 1400px) and (min-width: 1000px) {
+.grid-container-2 {
+  position: absolute;
+  padding-top: 7em;
+  padding-left: 3em;
+  padding-right: 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+
+  background-color: #494949;
+  height: 500px;
+  width: 100%;
+}
+}
+
+@media  screen and (max-width: 1000px) and (min-width: 801px) {
+.grid-container-2 {
+  position: absolute;
+  padding-top: 7em;
+  padding-left: 3em;
+  padding-right: 3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 40px;
+
+  background-color: #494949;
+  height: 500px;
+  width: 100%;
+}
+}
+
+@media  screen and (max-width: 800px) and (min-width: 0px) {
+.grid-container-2 {
+  position: absolute;
+  padding-top: 7em;
+  padding-left: 3em;
+  padding-right: 3em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 40px;
+
+  background-color: #494949;
+  height: 500px;
+  width: 100%;
+}
+}
+
+.column1-2 {
+  background-color: red;
+  background-image: url(../../bestelpagina/imgs/thaifood.webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.column2-2 {
+  background-color: rgb(159, 16, 16);
+  background-image: url(../../bestelpagina/imgs/thaifood.webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.column3-2 {
+  background-color: rgb(125, 15, 15);
+}
+.column4-2 {
+  background-color: rgb(78, 8, 8);
+}
+.column5-2 {
+  background-color: rgb(51, 4, 4);
+}
+.column6-2 {
   background-color: red;
 }
