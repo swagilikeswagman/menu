@@ -51,11 +51,25 @@
   height: 300px;
 }
 .footer{
-  min-height: 60vh;
+  min-height: 40vh;
   background: var(  --color-darken);
   color: #EEE;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#footer-contact{
+  margin-top: 2vh;
+}
+#footer-menu{
+  margin-top: 2vh;
+}
+#footer-menu > a{
+  display: block;
 }
 .footer > #footer-menu > a, #footer-contact > a, p > a{
   text-decoration: none;
   color: white;
+}
+#footer-contact > a > img{
+ max-width: 30px;
 }
