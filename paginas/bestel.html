@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sources/css/standaard.css">
     <link rel="stylesheet" href="../sources/css/bestel.css">
-    <script src="../sources/js/bestel.js"></script>
-    <title>Locaties - Happy Italy</title>
+    <script src="../sources/js/bestel.js" defer></script>
+    <title>Menu - Happy Italy</title>
 </head>
 <body>
     <nav>
@@ -22,8 +22,57 @@
         </div>
       </nav>
       <div id="container">
-        <h2>Pizza's</h2>
-        <section class="pizza">
+
+
+        <h2>Appetizers  <button onclick="toggleSection('pasta', this)" class="retract-button">-</button></h2>
+        <section id="pasta">
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/appetizers/appetizer_pane_con_olio.jpg');
+          background-position: center;">
+            <h3>Pane con olio, €4.45</h3>
+              <input type="button" onclick="koopProduct('appetizer_pane_con_olio',4.45)" value="+">
+              <input type="button" onclick="verwijderProduct('appetizer_pane_con_olio',4.45)" value="-">
+              <input type="text" id="totaal_appetizer_pane_con_olio" value="0">
+            </div>
+            <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/appetizers/appetizer_pane_con_tre_crème.jpg');
+            background-position: center;">
+              <h3>Pane con tre crème, €5.45</h3>
+                <input type="button" onclick="koopProduct('appetizer_pane_con_tre_crème',5.45)" value="+">
+                <input type="button" onclick="verwijderProduct('appetizer_pane_con_tre_crème',5.45)" value="-">
+                <input type="text" id="totaal_appetizer_pane_con_tre_crème" value="0">
+              </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/appetizers/appetizer_bruschetta_tomaat.jpg');
+              background-position: center;">
+                <h3>Bruschetta Tomaat, €5.95</h3>
+                  <input type="button" onclick="koopProduct('appetizer_bruschetta_tomaat',5.95)" value="+">
+                  <input type="button" onclick="verwijderProduct('appetizer_bruschetta_tomaat',5.95)" value="-">
+                  <input type="text" id="totaal_appetizer_bruschetta_tomaat" value="0">
+                </div>
+                <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/appetizers/appetizer_misto.jpg');
+                background-position: center;">
+                  <h3>Misto, €6.45</h3>
+                    <input type="button" onclick="koopProduct('appetizer_misto',6.45)" value="+">
+                    <input type="button" onclick="verwijderProduct('appetizer_misto',6.45)" value="-">
+                    <input type="text" id="totaal_appetizer_misto" value="0">
+                  </div>
+                  <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/appetizers/appetizer_caprese.jpeg');
+                  background-position: center;">
+                    <h3>Caprese, €7.95</h3>
+                      <input type="button" onclick="koopProduct('appetizer_caprese',7.95)" value="+">
+                      <input type="button" onclick="verwijderProduct('appetizer_caprese',7.95)" value="-">
+                      <input type="text" id="totaal_appetizer_caprese" value="0">
+                    </div>
+                    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/appetizers/appetizer_carpaccio.jpg');
+                    background-position: center;">
+                      <h3>Carpaccio, €9.95</h3>
+                        <input type="button" onclick="koopProduct('appetizer_carpaccio',9.95)" value="+">
+                        <input type="button" onclick="verwijderProduct('appetizer_carpaccio',9.95)" value="-">
+                        <input type="text" id="totaal_appetizer_carpaccio" value="0">
+                      </div>
+        </section>
+
+        <h2>Pizza's <button onclick="toggleSection('pizza', this)" class="retract-button">-</button></h2>
+        
+        <section id="pizza">
           <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_contadina.jpeg');">
           <h3>Pizza Contadina, €7.45</h3>
             <input type="button" onclick="koopProduct('pizza_contadina',7.45)" value="+">
@@ -50,8 +99,40 @@
             <input type="button" onclick="koopProduct('pizza_salame',9.45)" value="+">
             <input type="button" onclick="verwijderProduct('pizza_salame',9.45)" value="-">
             <input type="text" id="totaal_pizza_salame" value="0">
+          </div>          
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_tonno.jpg');
+          background-position: center">
+          <h3>Pizza Tonno, €9.95</h3>
+            <input type="button" onclick="koopProduct('pizza_tonno',9.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_tonno',9.95)" value="-">
+            <input type="text" id="totaal_pizza_tonno" value="0">
           </div>
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_rustica.webp');
+          background-position: center">
+          <h3>Pizza Rustica, €9.95</h3>
+            <input type="button" onclick="koopProduct('pizza_rustica',9.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_rustica',9.95)" value="-">
+            <input type="text" id="totaal_pizza_rustica" value="0">
+          </div>
+                    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_quattro_formaggi.jpg');
+          background-position: center">
+          <h3>Pizza Quattro Formaggi, €10.95</h3>
+            <input type="button" onclick="koopProduct('pizza_quattro_formaggi',10.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_quattro_formaggi',10.95)" value="-">
+            <input type="text" id="totaal_pizza_quattro_formaggi" value="0">
+          </div>
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_tonno.jpg');
+          background-position: center">
+          <h3>Di Lusso Margherita, €10.95</h3>
+            <input type="button" onclick="koopProduct('pizza_di_lusso_margherita',10.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_di_lusso_margherita',10.95)" value="-">
+            <input type="text" id="totaal_pizza_di_lusso_margherita" value="0">
+          </div>
+          
         </section>
+
+
+
         <input type="button" onclick="berekenPrijs()" value="Totaal Prijs" id="totaalbutton">
         <input type="text" id="totaalPrijs">
         <p id="lijst_producten"></p>
