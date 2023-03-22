@@ -245,19 +245,19 @@
 
   
 }
-@keyframes inside-blur {
+/* @keyframes inside-blur {
   0%
   {
     background-color: #ffffff1a;
     backdrop-filter: blur(0.5px);
-    -webkit-backdrop-filter: blur(0.5px); /* Voor Safari */
+    -webkit-backdrop-filter: blur(0.5px); /* Voor Safari *//*
     display: none;
   }
   100%
   {
     background-color: #ffffffae;
     backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); /* Voor Safari */
+  -webkit-backdrop-filter: blur(3px); /* Voor Safari *//*
   display: block;
   }
 }
@@ -295,7 +295,7 @@
   100% {
     opacity: 1;
   }
-}
+} */
 
 .column2 {
   background-color: rgb(159, 16, 16);
