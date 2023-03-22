@@ -4,53 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sources/css/bestel.css">
     <link rel="stylesheet" href="../sources/css/standaard.css">
-    <title>Bestellen</title>
+    <link rel="stylesheet" href="../sources/css/bestel.css">
+    <script src="../sources/js/bestel.js"></script>
+    <title>Locaties - Happy Italy</title>
 </head>
 <body>
-  <nav>
-    <div class="menu-bar">
-      <img src="imgs/logo.png" alt="">
-      <ul id="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="bestel.html">Menu</a></li>
-        <li><a href="locaties.html">Locaties</a></li>
-        <li><a href="about-us.html">About us</a></li>
-      </ul>
-    </div>
-  </nav>
-
-    <!--30 producten is genoeg-->
-
-    <div class="grid-container">
-        <div class="column1">
-            <div class="c1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ab architecto corrupti maiores pages</div>
+    <nav>
+        <div class="menu-bar">
+          <img src="imgs/logo.png" alt="">
+          <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="bestel.html">Menu</a></li>
+            <li><a href="locaties.html">Locaties</a></li>
+            <li><a href="about-us.html">About us</a></li>
+          </ul>
         </div>
-        <div class="column2">
-            <div class="c2"><div class="c2text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantiu.</div></div>
-        </div>
-        <div class="column3"> </div>
-        <div class="column4"> </div>
-        <div class="column5"> </div>
-        <div class="column6"> </div>
-    </div>
-
-    <hr class="line1">
-
-    <div class="grid-container-2">
-      <div class="column1-2">
-          <div class="c1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ab architecto corrupti maiores pages</div>
+      </nav>
+      <div id="container">
+        <section class="pizza">
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_contadina.jpeg');   width: 300px;
+          height: 15vh;">
+          <h3>Pizza Contadina, €7.45</h3>
+            <input type="button" onclick="koopProduct('pizza_contadina',7.45)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_contadina',7.45)" value="-">
+            <input type="text" id="totaal_pizza_contadina" value="0">
+          </div>
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_margherita.png');   width: 300px;
+          height: 15vh;">
+          <h3>Pizza Margherita, €7.95</h3>
+            <input type="button" onclick="koopProduct('pizza_margherita',7.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_margherita',7.95)" value="-">
+            <input type="text" id="totaal_pizza_margherita" value="0">
+          </div>
+        </section>
+        <input type="button" onclick="berekenPrijs()" value="Bereken totaalprijs" class="totaalbutton">
+        <input type="text" id="totaalPrijs">
       </div>
-      <div class="column2-2">
-          <div class="c2"><div class="c2text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantiu.</div></div>
-      </div>
-      <div class="column3-2"> </div>
-      <div class="column4-2"> </div>
-      <div class="column5-2"> </div>
-      <div class="column6-2"> </div>
-  </div>
 
-    
 </body>
 </html>
