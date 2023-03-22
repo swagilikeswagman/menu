@@ -22,6 +22,7 @@
         </div>
       </nav>
       <div id="container">
+        <h2>Pizza's</h2>
         <section class="pizza">
           <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_contadina.jpeg');">
           <h3>Pizza Contadina, €7.45</h3>
@@ -29,16 +30,31 @@
             <input type="button" onclick="verwijderProduct('pizza_contadina',7.45)" value="-">
             <input type="text" id="totaal_pizza_contadina" value="0">
           </div>
-          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_margherita.png');">
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_margherita.webp');
+          background-position-x: -20px; background-position-y: -20px;">
           <h3>Pizza Margherita, €7.95</h3>
             <input type="button" onclick="koopProduct('pizza_margherita',7.95)" value="+">
             <input type="button" onclick="verwijderProduct('pizza_margherita',7.95)" value="-">
             <input type="text" id="totaal_pizza_margherita" value="0">
           </div>
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_delizioza.jpeg');
+          background-position: center">
+          <h3>Pizza Delizioza, €8.95</h3>
+            <input type="button" onclick="koopProduct('pizza_delizioza',8.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_delizioza',8.95)" value="-">
+            <input type="text" id="totaal_pizza_delizioza" value="0">
+          </div>
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pizza/pizza_salame.webp');
+          background-position: center">
+          <h3>Pizza Salame, €9.45</h3>
+            <input type="button" onclick="koopProduct('pizza_salame',9.45)" value="+">
+            <input type="button" onclick="verwijderProduct('pizza_salame',9.45)" value="-">
+            <input type="text" id="totaal_pizza_salame" value="0">
+          </div>
         </section>
-        <input type="button" onclick="berekenPrijs()" value="Bereken totaalprijs" class="totaalbutton">
+        <input type="button" onclick="berekenPrijs()" value="Totaal Prijs" id="totaalbutton">
         <input type="text" id="totaalPrijs">
+        <p id="lijst_producten"></p>
       </div>
-
 </body>
 </html>

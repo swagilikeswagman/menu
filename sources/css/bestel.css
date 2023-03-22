@@ -2,6 +2,15 @@
   height: 90vh;
   padding: 20px;
 }
+#container > h2{
+  text-align: center;
+  color: var(--color-white);
+  font-size: 4rem;
+  border-bottom: 2px solid var(--color-white);
+}
+#container > p{
+  color: var(--color-white);
+}
 #container >section > div{
   width: 400px;
   height: 15vh;
@@ -30,7 +39,34 @@ input[type=text]{
   margin-right: 5px;
   margin-bottom: 5px;
 }
-section{
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+#totaalbutton{
+  margin-top: 50px;
+  height: 40px;
+  width: 100px;
 }
+#totaalPrijs{
+  margin-top: 50px;
+  height: 40px;
+  width: 100px;
+}
+section{
+  margin-top: 2vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section > div{
+  margin-top: 5px;
+  margin: 5px 3px;
+}
+
+/* @media (max-width: 800px) {
+  section{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  section > div{
+    margin-top: 5px;
+  }
+} */
