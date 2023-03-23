@@ -71,6 +71,7 @@ section > div {
 /* @media (max-width: 850px) {
 } */
 
+#appetizers,
 #pizza,
 #pasta {
   transition: height 2s ease-in-out;
