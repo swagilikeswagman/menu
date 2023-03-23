@@ -1,75 +1,78 @@
-.home{
+.home {
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background:linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url(../../paginas/imgs/pizza.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.511)),
+    url(../../paginas/imgs/pizza.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 2rem;
 }
-.home .content{
+.home .content {
   max-width: 60rem;
 }
-.home .content h3{
+.home .content h3 {
   font-size: 4rem;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
 }
-.home .content p{
+.home .content p {
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.8;
   padding: 1rem 0;
-  color: #EEE;
+  color: #eee;
 }
-.home .content a{
+.home .content a {
   font-size: 1.5rem;
   padding: 5px 20px;
   background-color: var(--color-primary);
-  color: #EEE;
+  color: #eee;
   text-decoration: none;
 }
-.services{
+.services {
   min-height: 90vh;
-  background: var(  --color-primary-darken);
-  color: #EEE;
+  background: var(--color-primary-darken);
+  color: #eee;
 }
-.services > h3{
+.services > h3 {
   font-size: 2.5rem;
   text-align: center;
 }
 
-.service-container{
+.service-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   grid-gap: 1.5rem;
   margin-top: 3rem;
   padding: 2rem;
 }
-.service-container img{
+.service-container img {
   width: 250px;
   height: 300px;
 }
-.footer{
+.footer {
   min-height: 40vh;
-  background: var(  --color-darken);
-  color: #EEE;
+  background: var(--color-darken);
+  color: #eee;
   display: grid;
   grid-template-columns: auto auto;
 }
-#footer-contact{
+#footer-contact {
   margin-top: 2vh;
 }
-#footer-menu{
+#footer-menu {
   margin-top: 2vh;
 }
-#footer-menu > a{
+#footer-menu > a {
   display: block;
 }
-.footer > #footer-menu > a, #footer-contact > a, p > a{
+.footer > #footer-menu > a,
+#footer-contact > a,
+p > a {
   text-decoration: none;
   color: white;
 }
-#footer-contact > a > img{
- max-width: 30px;
+#footer-contact > a > img {
+  max-width: 30px;
 }

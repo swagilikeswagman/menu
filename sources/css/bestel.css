@@ -1,29 +1,27 @@
-#container{
+#container {
   height: 90vh;
   padding: 20px;
 }
-#container > h2{
+#container > h2 {
   text-align: center;
   color: var(--color-white);
   font-size: 4rem;
   border-bottom: 2px solid var(--color-white);
 }
-#container > p{
+#container > p {
   color: var(--color-white);
 }
-#container >section > div{
+#container > section > div {
   width: 400px;
   min-width: 300px;
   height: 15vh;
   border-radius: 10px;
   border: solid 5px;
   border-color: var(--color-primary);
-  display: flex;
-  align-items: flex-end;
   color: var(--color-white);
   font-size: large;
 }
-input[type=button]{
+input[type="button"] {
   width: 50px;
   height: 20px;
   background-color: var(--color-primary);
@@ -31,7 +29,7 @@ input[type=button]{
   margin-left: 2px;
   margin-bottom: 5px;
 }
-input[type=text]{
+input[type="text"] {
   width: 50px;
   height: 20px;
   background-color: gray;
@@ -40,12 +38,12 @@ input[type=text]{
   margin-right: 5px;
   margin-bottom: 5px;
 }
-#totaalbutton{
+#totaalbutton {
   margin-top: 50px;
   height: 40px;
   width: 100px;
 }
-.retract-button{
+.retract-button {
   margin-top: 50px;
   height: 25px;
   width: 25px;
@@ -53,7 +51,7 @@ input[type=text]{
   color: var(--color-white);
   border: 2px solid var(--color-white);
 }
-#totaalPrijs{
+#totaalPrijs {
   margin-top: 50px;
   height: 40px;
   width: 100px;
@@ -65,19 +63,12 @@ section{
   flex-wrap: wrap;
 }
 
-section > div{
+section > div {
   margin: 5px 3px;
-  flex:  1 1;
+  flex: 1 1;
 }
 
-/* @media (max-width: 800px) {
-  section{
-    display: grid;
-    grid-template-columns: auto;
-  }
-  section > div{
-    margin-top: 5px;
-  }
+/* @media (max-width: 850px) {
 } */
 
 #pizza,

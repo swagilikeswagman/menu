@@ -1,3 +1,5 @@
+
+// data products
 let products = {
   pizza_contadina: { count: 0, price: 0 },
   pizza_margherita: { count: 0, price: 0 },
@@ -13,8 +15,26 @@ let products = {
   appetizer_caprese: { count: 0, price: 0 },
   appetizer_carpaccio: { count: 0, price: 0 },
   appetizer_misto: { count: 0, price: 0 },
+  pizza_quattro_stagioni: {count: 0, price: 0},
+  pizza_con_cotto: {count: 0, price: 0},
+  pizza_fiamma: {count: 0, price: 0},
+  pizza_ai_funghi: {count: 0, price: 0},
+  pizza_hawaii: {count: 0, price: 0},
+  pizza_pollo_con_extra: {count: 0, price: 0},
+  pizza_prosciutto_di_parma: {count: 0, price: 0},
+  pizza_bufala_bruschetta: {count: 0, price: 0},
+  pizza_pollo_pesto: {count: 0, price: 0},
+  pizza_carpaccio: {count: 0, price: 0},
+  pizza_döner: {count: 0, price: 0},
+  pizza_bbq_chicken: {count: 0, price: 0},
+  pizza_bbq_meatlovers: {count: 0, price: 0},
+  pasta_bianca: {count: 0, price: 0},
+  pasta_pomodore: {count: 0, price: 0},
+  pasta_pomodore: {count: 0, price: 0},
+  pasta_pomodore: {count: 0, price: 0},
+  pasta_pomodore: {count: 0, price: 0},
 }
-
+// functions
 function koopProduct(product, prijs) {
   products[product].count++;
   products[product].price = products[product].count * prijs;
@@ -38,7 +58,7 @@ function toonProducten() {
   let producten = "";
   for (let product in products) {
     if (products[product].count > 0) {
-      producten += `<br>${product.replace("_", " ")}: ${
+      producten += `<br>${product.replace(/_/g, " ")}: ${
         products[product].count
       }`;
     }
@@ -59,18 +79,6 @@ function berekenPrijs() {
 
 // expand/retract
 // expand/retract
-
-// function toggleSection(sectionId, button) {
-//   const section = document.querySelector(`#${sectionId}`);
-//   section.classList.toggle('active');
-//   if (section.style.display === 'none') {
-//     section.style.display = 'flex';
-//     button.innerText = '-';
-//   } else {
-//     section.style.display = 'none';
-//     button.innerText = '+';
-//   }
-// }
 
 function toggleSection(sectionId, button) {
   const section = document.querySelector(`#${sectionId}`);
