@@ -30,7 +30,7 @@ let products = {
   pizza_bbq_meatlovers: {count: 0, price: 0},
   pasta_bianca: {count: 0, price: 0},
   pasta_pomodore: {count: 0, price: 0},
-  pasta_pomodore: {count: 0, price: 0},
+  pasta_verdure: {count: 0, price: 0},
   pasta_pomodore: {count: 0, price: 0},
   pasta_pomodore: {count: 0, price: 0},
 }

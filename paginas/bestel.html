@@ -231,13 +231,20 @@
               <input type="button" onclick="verwijderProduct('pasta_bianca',7.75)" value="-">
               <input type="text" id="totaal_pasta_bianca" value="0">
             </div>
-            <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_bianca.png');
+            <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_pomodore.jpg');
           background-position: center;">
             <h3>Pomodore, €8.95</h3>
               <input type="button" onclick="koopProduct('pasta_pomodore',8.95)" value="+">
               <input type="button" onclick="verwijderProduct('pasta_pomodore',8.95)" value="-">
               <input type="text" id="totaal_pasta_pomodore" value="0">
             </div>
+            <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_verdure.jpg');
+            background-position: center;">
+              <h3>Verdure, €8.95</h3>
+                <input type="button" onclick="koopProduct('pasta_verdure',8.95)" value="+">
+                <input type="button" onclick="verwijderProduct('pasta_verdure',8.95)" value="-">
+                <input type="text" id="totaal_pasta_verdure" value="0">
+              </div>
         </section>
 
         <input type="button" onclick="berekenPrijs()" value="Totaal Prijs" id="totaalbutton">
