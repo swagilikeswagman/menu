@@ -29,6 +29,11 @@ input[type="button"] {
   margin-left: 2px;
   margin-bottom: 5px;
 }
+input[type="button"]:hover {
+  width: 60px;
+  height: 25px;
+  transition: 50ms;
+}
 input[type="text"] {
   width: 50px;
   height: 20px;
@@ -50,6 +55,11 @@ input[type="text"] {
   background-color: transparent;
   color: var(--color-white);
   border: 2px solid var(--color-white);
+}
+.retract-button:hover {
+  height: 30px;
+  width: 30px;
+  transition: .5s;
 }
 #totaalPrijs {
   margin-top: 50px;
@@ -73,6 +83,6 @@ section > div {
 
 #appetizers,
 #pizza,
-#pasta {
-  transition: height 2s ease-in-out;
+#pasta{
+  transition: 2s;
 }

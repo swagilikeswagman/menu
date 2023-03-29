@@ -52,7 +52,7 @@
   height: 300px;
 }
 .footer {
-  min-height: 40vh;
+  min-height: 30vh;
   background: var(--color-darken);
   color: #eee;
   display: grid;
