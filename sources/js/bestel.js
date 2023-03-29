@@ -71,11 +71,15 @@ function berekenPrijs() {
     (acc, curr) => acc + curr.price,
     0
   );
+  if (totaalPrijs >= 50) {
+    totaalPrijs *= 0.85; 
+  }
   document.getElementById("totaalPrijs").value = "€" + totaalPrijs.toFixed(2);
   document.getElementById(
     "lijst_producten"
   ).innerHTML = `Geselecteerde producten:\n${toonProducten()}`;
 }
+
 
 // expand/retract
 // expand/retract
