@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sources/css/standaard.css">
     <link rel="stylesheet" href="../sources/css/bestel.css">
-    <link rel="icon" href="paginas/imgs/logo.png" type="image/icon type" />
+    <link rel="icon" href="imgs/logo.png" type="image/icon type" />
     <script src="../sources/js/bestel.js" defer></script>
     <title>Menu - Happy Italy</title>
 </head>
@@ -17,7 +17,6 @@
           <ul id="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="bestel.html">Menu</a></li>
-            <li><a href="locaties.html">Locaties</a></li>
             <li><a href="about-us.html">About us</a></li>
           </ul>
         </div>
@@ -245,6 +244,72 @@
                 <input type="button" onclick="verwijderProduct('pasta_verdure',8.95)" value="-">
                 <input type="text" id="totaal_pasta_verdure" value="0">
               </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_pesto.jpg');
+              background-position: center;">
+              <h3>Pesto, €9.45</h3>
+              <input type="button" onclick="koopProduct('pasta_pesto',9.45)" value="+">
+              <input type="button" onclick="verwijderProduct('pasta_pesto',9.45)" value="-">
+              <input type="text" id="totaal_pasta_pesto" value="0">
+              </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_ai_funghi.jpg');
+              background-position: center;">
+              <h3>Ai Funghi, €9.45</h3>
+              <input type="button" onclick="koopProduct('pasta_ai_funghi',9.45)" value="+">
+              <input type="button" onclick="verwijderProduct('pasta_ai_funghi',9.45)" value="-">
+              <input type="text" id="totaal_pasta_ai_funghi" value="0">
+              </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_pomodori_secchi.jpg');
+              background-position: center;">
+              <h3>Pomodori Secchi, €10.95</h3>
+              <input type="button" onclick="koopProduct('pasta_pomodori_secchi',10.95)" value="+">
+              <input type="button" onclick="verwijderProduct('pasta_pomodori_secchi',10.95)" value="-">
+              <input type="text" id="totaal_pasta_pomodori_secchi" value="0">
+              </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_gamberi_rosso.jpg');
+              background-position: center;">
+              <h3>Gamberi Rosso, €10.95</h3>
+              <input type="button" onclick="koopProduct('pasta_gamberi_rosso',10.95)" value="+">
+              <input type="button" onclick="verwijderProduct('pasta_gamberi_rosso',10.95)" value="-">
+              <input type="text" id="totaal_pasta_gamberi_rosso" value="0">
+              </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_tonno.jpg');
+            background-position: center;">
+              <h3>Tonno, €10.95</h3>
+                <input type="button" onclick="koopProduct('pasta_tonno',10.95)" value="+">
+                <input type="button" onclick="verwijderProduct('pasta_tonno',10.95)" value="-">
+                <input type="text" id="totaal_pasta_tonno" value="0">
+              </div>
+              <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_con_polpette.jpg');
+        background-position: center;">
+          <h3>Con Polpette, €11.45</h3>
+            <input type="button" onclick="koopProduct('pasta_con_polpette',11.45)" value="+">
+            <input type="button" onclick="verwijderProduct('pasta_con_polpette',11.45)" value="-">
+            <input type="text" id="totaal_pasta_con_polpette" value="0">
+          </div>
+          
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_bolognese.jpg');
+        background-position: center;">
+          <h3>Bolognese, €11.45</h3>
+            <input type="button" onclick="koopProduct('pasta_bolognese',11.45)" value="+">
+            <input type="button" onclick="verwijderProduct('pasta_bolognese',11.45)" value="-">
+            <input type="text" id="totaal_pasta_bolognese" value="0">
+          </div>
+          
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_gamberi_spinaci.jpg');
+        background-position: center;">
+          <h3>Gamberi Spinaci, €11.45</h3>
+            <input type="button" onclick="koopProduct('pasta_gamberi_spinaci',11.45)" value="+">
+            <input type="button" onclick="verwijderProduct('pasta_gamberi_spinaci',11.45)" value="-">
+            <input type="text" id="totaal_pasta_gamberi_spinaci" value="0">
+          </div>
+          
+          <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.571),rgba(0, 0, 0, 0.511)), url('imgs/menu/pastas/pasta_pollo_e_limone.jpg');
+        background-position: center;">
+          <h3>Pollo E Limone, €11.95</h3>
+            <input type="button" onclick="koopProduct('pasta_pollo_e_limone',11.95)" value="+">
+            <input type="button" onclick="verwijderProduct('pasta_pollo_e_limone',11.95)" value="-">
+            <input type="text" id="totaal_pasta_pollo_e_limone" value="0">
+          </div>
         </section>
 
         <input type="button" onclick="berekenPrijs()" value="Totaal Prijs" id="totaalbutton">
